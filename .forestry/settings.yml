@@ -10,7 +10,6 @@ sections:
 - type: document
   path: faq.html
   label: FAQ
-  match: "**/*"
 - type: directory
   path: _sets
   label: Sets
