@@ -1,0 +1,28 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: title
+  label: title
+- type: text
+  name: video_id
+  label: video_id
+- type: text
+  name: description
+  label: description
+- type: text
+  name: type
+  label: type
+- type: list
+  name: categories
+  label: categories
+- type: text
+  name: set
+  label: set
+- type: number
+  name: set_order
+  label: set_order
