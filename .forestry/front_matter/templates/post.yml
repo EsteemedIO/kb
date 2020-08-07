@@ -41,14 +41,14 @@ fields:
     use_select: false
 - name: set
   type: select
-  default: []
+  default: ''
   config:
     required: false
     options:
     - getting-started
     source:
-      type: simple
-      section: 
+      type: pages
+      section: sets
       file: 
       path: 
   label: Set
