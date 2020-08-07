@@ -2,27 +2,56 @@
 label: Post
 hide_body: false
 fields:
-- type: datetime
-  name: date
-  label: date
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Date
+  default: now
+- name: type
+  type: select
+  default: ''
+  config:
+    required: true
+    options:
+    - Document
+    - Video
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
 - type: text
   name: video_id
-  label: video_id
+  label: YouTube Video ID
+  showOnly:
+    field: type
+    value: Video
 - type: text
   name: description
-  label: description
-- type: text
-  name: type
-  label: type
+  label: Description
 - type: list
   name: categories
-  label: categories
-- type: text
-  name: set
-  label: set
+  label: Categories
+  config:
+    use_select: false
+- name: set
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - getting-started
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Set
 - type: number
   name: set_order
-  label: set_order
+  label: Set Order
