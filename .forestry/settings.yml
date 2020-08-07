@@ -9,7 +9,7 @@ sections:
   create: all
 - type: document
   path: faq.html
-  label: FAQ
+  label: FAQs
 - type: directory
   path: _sets
   label: Sets
